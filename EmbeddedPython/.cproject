@@ -99,9 +99,11 @@
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.1602767010" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release">
 								<option id="gnu.cpp.link.option.paths.775186298" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/usr/local/lib/boost/installation/lib"/>
+									<listOptionValue builtIn="false" value="/usr/lib/python2.7/config-x86_64-linux-gnu"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.96136832" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="boost_python"/>
+									<listOptionValue builtIn="false" value="python2.7"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.702849986" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
