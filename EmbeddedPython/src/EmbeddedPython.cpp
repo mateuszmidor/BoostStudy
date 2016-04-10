@@ -21,6 +21,12 @@ int main() {
 	object main_module = import("__main__");
 	object main_namespace = main_module.attr("__dict__");
 
-	const char PYTHON[] = "print '--- hello from python! ---'";
-	object ignored = exec(PYTHON, main_namespace);
+	// set global variable TEXT
+	main_namespace["TEXT"] = "--- hello from python! ---";
+
+	// prepare simple python statement
+	const char PYTHON_STATEMENT[] = "print TEXT";
+
+	// run the python statement
+	object ignored = exec(PYTHON_STATEMENT, main_namespace);
 }
